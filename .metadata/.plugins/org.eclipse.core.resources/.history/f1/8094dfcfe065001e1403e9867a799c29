@@ -1,0 +1,11 @@
+package com.bookmyshow.dao;
+
+import com.bookmyshow.model.Customer;
+
+public interface CustomerDao {
+
+	Customer save(Customer customer);
+
+	Customer get(int id);
+
+}

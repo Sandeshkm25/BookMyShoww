@@ -1,0 +1,13 @@
+package com.bookmyshow.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.bookmyshow.model.CinemaHall;
+
+public interface CinemaHallRepo extends JpaRepository<CinemaHall, Integer>{
+
+	@Query(value = "select * from SHOW_SEAT where seat_No=?1")
+	CinemaHall getSeat();
+
+}

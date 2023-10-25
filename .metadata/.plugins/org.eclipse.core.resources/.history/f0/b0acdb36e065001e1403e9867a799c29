@@ -1,0 +1,5 @@
+package com.bookmyshow.daoimpl;
+
+public class CustomerDaoImpl {
+
+}
